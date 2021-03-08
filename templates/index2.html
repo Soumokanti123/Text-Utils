@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Tachyon</title>
+  </head>
+  <body >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="container-fluid">
+    <span class="material-icons">
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g><path d="M6.05,8.05c-2.73,2.73-2.73,7.15-0.02,9.88c1.47-3.4,4.09-6.24,7.36-7.93c-2.77,2.34-4.71,5.61-5.39,9.32 c2.6,1.23,5.8,0.78,7.95-1.37c2.99-2.99,3.83-11.14,4.01-13.38c0.02-0.31-0.23-0.56-0.53-0.53C17.19,4.22,9.04,5.06,6.05,8.05z"/></g></g></svg>
+</span>
+    <a class="navbar-brand" href="#"><strong>Tachyon.in</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Sports
+          </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Cricket</a></li>
+            <li><a class="dropdown-item" href="#">Football</a></li>
+            <li><a class="dropdown-item" href="#">Tennis</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Fashion
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+            <li><a class="dropdown-item" href="#">Flipkart</a></li>
+            <li><a class="dropdown-item" href="#">amazon</a></li>
+            <li><a class="dropdown-item" href="#">Myntra</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Food Order
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+            <li><a  class="dropdown-item" href="#">Zomato</a></li>
+            <li><a class="dropdown-item" href="#">Swiggy</a></li>
+            <li><a class="dropdown-item" href="#">Uber</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <a class="_3NH1qf"><img class="_26XcnQ" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNSAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Im0zMzQuMDggNTguNGMwIC44ODQtLjczOSAxLjYtMS42NTEgMS42LS45MTIgMC0xLjY1MS0uNzE2LTEuNjUxLTEuNmgzLjMwMm0tMS42NTEtMTQuNGMuNDU2IDAgLjgyNS4zNTguODI1Ljh2Ljg2NGMyLjM0NC4zODQgNC4xMjcgMi4zNiA0LjEyNyA0LjczNnY0LjhsMi40NzYgMi40aC0xNC44NTdsMi40NzYtMi40di00LjhjMC0yLjM3NiAxLjc4My00LjM1MiA0LjEyNy00LjczNnYtLjg2NGMwLS40NDIuMzctLjguODI1LS44IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzI1LTQ0KSIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=" alt="notification"></a>
+
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Welcome to Tachyon!</strong> <small class="text-muted">Now, You are Faster than Light</small>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+
+  </button>
+</div>
+
+<div class="container">
+    <form action='/analyze' method='post'>{% csrf_token %}
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label"><strong>Share Your Idea with us:</strong></label>
+  <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="5"></textarea>
+</div>
+    <div class="form-check form-switch">
+  <input class="form-check-input" name="removepunc" type="checkbox" id="flexSwitchCheckDefault1">
+  <label class="form-check-label" for="flexSwitchCheckDefault1">Remove Punctuation</label>
+</div>
+      <div class="form-check form-switch">
+  <input class="form-check-input" name="fullcap" type="checkbox" id="flexSwitchCheckDefault2">
+  <label class="form-check-label" for="flexSwitchCheckDefault2">UpperCase</label>
+</div>
+
+    <div class="form-check form-switch">
+  <input class="form-check-input" name="newlineremover" type="checkbox" id="flexSwitchCheckDefault3">
+  <label class="form-check-label" for="flexSwitchCheckDefault3">Remove new line</label>
+</div>
+    <div class="form-check form-switch">
+  <input class="form-check-input" name="spaceremover" type="checkbox" id="flexSwitchCheckDefault4">
+  <label class="form-check-label" for="flexSwitchCheckDefault4">Space Remover</label>
+</div>
+    <div class="form-check form-switch">
+  <input class="form-check-input" name="charCounter" type="checkbox" id="flexSwitchCheckDefault5">
+  <label class="form-check-label" for="flexSwitchCheckDefault5">Character Count</label>
+</div>
+<button type="submit" class="btn btn-dark mt-2">ANALYZE TEXT</button>
+</form>
+</div>
+<nav aria-label="Page navigation example"  >
+  <ul class="pagination justify-content-center mt-5">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><strong>Previous</strong></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#"><strong>1</strong></a></li>
+    <li class="page-item"><a class="page-link" href="#"><strong>2</strong></a></li>
+    <li class="page-item"><a class="page-link" href="#"><strong>3</strong></a></li>
+    <li class="page-item">
+      <a class="page-link" href="#"><strong>Next</strong></a>
+    </li>
+  </ul>
+</nav>
+  <div class="container" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+  <h4 class="pagination justify-content-center" id="fat"><strong>About Us</strong></h4>
+  <p>Our mission is to be Earth’s most customer-centric company. Tachyon is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking.</p>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
