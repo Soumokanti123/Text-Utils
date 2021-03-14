@@ -55,6 +55,7 @@ def analyze(request):
         params = {'purpose': 'Removed Space', 'analyzed_text': analyzed}
         djtext = analyzed
 
+
     if charCounter=='on':
         analyzed = 0
         for char in djtext:
