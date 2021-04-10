@@ -8,22 +8,26 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>Tachyon</title>
+    <title>Soumokanti Bera</title>
   </head>
-  <body>
+  <body >
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><strong>Tachyon.in</strong></a>
+    <span class="material-icons">
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g><path d="M6.05,8.05c-2.73,2.73-2.73,7.15-0.02,9.88c1.47-3.4,4.09-6.24,7.36-7.93c-2.77,2.34-4.71,5.61-5.39,9.32 c2.6,1.23,5.8,0.78,7.95-1.37c2.99-2.99,3.83-11.14,4.01-13.38c0.02-0.31-0.23-0.56-0.53-0.53C17.19,4.22,9.04,5.06,6.05,8.05z"/></g></g></svg>
+</span>
+    <a class="navbar-brand" href="#"><strong>Welcome to my Prortfolio</strong></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index2">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
               Sports
           </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -47,19 +51,43 @@
             Food Order
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-            <li><a class="dropdown-item" href="#">Zomato</a></li>
+            <li><a  class="dropdown-item" href="#">Zomato</a></li>
             <li><a class="dropdown-item" href="#">Swiggy</a></li>
             <li><a class="dropdown-item" href="#">Uber</a></li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about">About Me</a>
+        </li>
       </ul>
     </div>
-      <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
   </div>
 </nav>
+  <style>
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    </style>
+
 
   <div class="alert alert-success alert-dismissible fade show" role="alert">
   <strong>Congrats!</strong> Your Text has been Analyzed.
@@ -70,9 +98,9 @@
 <div class="container">
     <strong>Your Analyzed Text - {{ purpose }}</strong>
 <p>
-  <pre><strong class="mt-2 " style="color:#20c997" >{{ analyzed_text }}</strong></pre>
+  <pre><strong class="mt-2 " style="color:dark" >{{ analyzed_text }}</strong></pre>
 </p>
-<br><button type="submit" class="btn btn-dark mt-2"><strong><a href="/">BACK</a></strong></button>
+<br><button type="submit" class="btn btn-dark mt-2"><strong><a href="/index2">BACK</a></strong></button>
 </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

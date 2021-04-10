@@ -7,6 +7,8 @@ def index(request):
 
 def index2(request):
     return render(request, "index2.html")
+def about(request):
+    return render(request,"about.html")
 
 def navigate2(request):
     return render(request,"navigate2.html")
